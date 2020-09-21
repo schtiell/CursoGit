@@ -21,15 +21,21 @@
 
 		function calcular_pesoJupiter(peso,tierra,jupiter){
 
-			var peso_jupiter = (peso * jupiter)/ tierra;
+			var peso_jupiter = (peso * jupiter)/tierra;
 			return peso_jupiter;
 
 		}
 		
+        function calcular_pesoSaturno(peso,tierra,saturno){
+            var peso_en_saturno = (peso * saturno)/tierra;
+            return peso_en_saturno;
+        }
+
 		var g_tierra = 9.8; //Gravedad en la Tierra
 		var g_marte = 3.7; // Gravedad en Marte
 		var g_jupiter = 24.8; //Gravedad en Júpiter
-		var peso = 92; //peso actual
+        var g_saturno = 10.44;
+		var peso = 72; //peso actual
 
 		//2 tipos de imprimir el resultado, ya sea con una ventana de alerta o en el cuerpo de la página
 
@@ -38,6 +44,8 @@
 
 		document.write('Tu peso en Marte es: ' + calcular_pesoMarte(peso,g_tierra,g_marte) + '<br>')
 		document.write('Tu peso en Júpiter es: ' + calcular_pesoMarte(peso,g_tierra,g_jupiter));
+
+        alert('Tui peso en Saturno es: ' + calcular_pesoSaturno(peso,g_tierra,g_saturno,));
 
 	</script>
 
